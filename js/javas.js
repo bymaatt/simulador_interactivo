@@ -24,6 +24,9 @@ function agregar (){
     imprimirLista();
 };
 
+const btn= document.getElementById("boton");
+btn.addEventListener("click", agregar);
+
 let array= [];
 function imprimirLista(){
     array.push(productoNuevo);
