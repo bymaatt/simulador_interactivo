@@ -21,11 +21,11 @@ function agregar (){
 
     productoNuevo= new Producto (nombreUser, categoriaUser, origenUser);
     console.log(productoNuevo);
-    sumar();
+    imprimirLista();
 };
 
 let array= [];
-function sumar(){
+function imprimirLista(){
     array.push(productoNuevo);
     console.log(array);
     document.getElementById("tabla").innerHTML += '<tbody><td>'+productoNuevo.nombre+'</td><td>'+productoNuevo.categoria+'</td><td>'+productoNuevo.origen+'</td></tbody>';
