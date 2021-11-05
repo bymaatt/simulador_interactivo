@@ -1,103 +1,128 @@
-.logo{
-    font-family: 'Oswald', sans-serif;
+* {
+	h1 {
+		font-family: "Oswald", sans-serif;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		font-size: 3rem;
+	}
 }
-.usuario{
-    color: white;
+
+.logo {
+	font-family: "Oswald", sans-serif;
 }
-.navbar{
-    background-color: black !important;
-    font-family: 'Oswald', sans-serif;
+.usuario {
+	color: white;
 }
-#img{
-    height: 35rem;
-    width: 35rem;
+.navbar {
+	background-color: black !important;
+	font-family: "Oswald", sans-serif;
 }
-.bg-primary{
-    background-image: url(../img/funko-2.jpg);
+#img {
+	height: 35rem;
+	width: 35rem;
 }
-#img{
-    margin: auto;
+.bg-primary {
+	background-image: url(../img/funko-2.jpg);
 }
-#lista{
-    div{
-        div{
-            div{
-                form{
-                    width: 30rem;
-                    margin: auto;
-                    
-                }
-                table{
-                    width: 30rem;
-                    margin: auto;
-                }
-            }
-            
-        }
-    }
+#img {
+	margin: auto;
+}
+#lista {
+	div {
+		div {
+			div {
+				form {
+					width: 30rem;
+					margin: auto;
+				}
+				table {
+					width: 30rem;
+					margin: auto;
+				}
+			}
+		}
+	}
 }
 
 /* USER */
 
-#user{
-    font-family: 'Oswald', sans-serif;
-    div{
-        display: flex;
-        flex-direction: row;
-        .usuario{
-            padding-right: .5rem;
-            padding-left: .5rem;
-        }
-        #btnVerificar{
-            margin-left: .7rem;
-            margin-right: 0.5rem;
-        }
-    }
-    
+#user {
+	font-family: "Oswald", sans-serif;
+	div {
+		display: flex;
+		flex-direction: row;
+		.usuario {
+			padding-right: 0.5rem;
+			padding-left: 0.5rem;
+		}
+		#btnVerificar {
+			margin-left: 0.7rem;
+			margin-right: 0.5rem;
+		}
+	}
 }
 
 /* HEADER IMG */
 
+header {
+	background: url(/img/fondo3.gif) no-repeat center center;
+	background-size: cover;
+	height: 45rem;
+	div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 
-header{
-    background: url(/img/fondo3.gif) no-repeat center center;
-    background-size: cover;
-    height: 45rem;
-    div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        h1{
-            color: white;
-            font-size: 7rem;
-            font-family: 'Permanent Marker', cursive;
-            padding-top: 3rem;
-            padding-right: 3rem;
-            padding-left: 3rem;
-            
-        }
-        div{
-            p{
-                color: white;
-                font-family: 'Open Sans Condensed', sans-serif;
-                font-size: 1.8rem;
-                flex-direction: row;
-            }
-            div{
-                display: flex;
-                flex-direction: row;
-                padding: 1rem;
-                button {
-                    margin-left: 1rem;
-                    margin-right: 1rem;
-                    a{
-                        text-decoration: none;
-                    }
-                    
-                }
-            }
-            
-        }
-    }
+		h1 {
+			color: white;
+			font-size: 7rem;
+			font-family: "Permanent Marker", cursive;
+			padding-top: 3rem;
+			padding-right: 3rem;
+			padding-left: 3rem;
+		}
+		div {
+			p {
+				color: white;
+				font-family: "Open Sans Condensed", sans-serif;
+				font-size: 1.8rem;
+				flex-direction: row;
+			}
+			div {
+				display: flex;
+				flex-direction: row;
+				padding: 1rem;
+				button {
+					margin-left: 1rem;
+					margin-right: 1rem;
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* TITULO CARRITO */
+
+#carrito {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+/* PRODUCTOS */
+
+.product {
+	div {
+		img {
+			width: 12rem;
+			height: 11rem;
+		}
+		div {
+			button {
+				margin-bottom: 1.5rem;
+				margin-top: 1rem;
+			}
+		}
+	}
 }

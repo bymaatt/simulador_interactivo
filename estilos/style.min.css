@@ -1,5 +1,12 @@
+* h1 {
+  font-family: "Oswald", sans-serif;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
 .logo {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .usuario {
@@ -8,7 +15,7 @@
 
 .navbar {
   background-color: black !important;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 #img {
@@ -36,7 +43,7 @@
 
 /* USER */
 #user {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 #user div {
@@ -45,12 +52,12 @@
 }
 
 #user div .usuario {
-  padding-right: .5rem;
-  padding-left: .5rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 #user div #btnVerificar {
-  margin-left: .7rem;
+  margin-left: 0.7rem;
   margin-right: 0.5rem;
 }
 
@@ -70,7 +77,7 @@ header div {
 header div h1 {
   color: white;
   font-size: 7rem;
-  font-family: 'Permanent Marker', cursive;
+  font-family: "Permanent Marker", cursive;
   padding-top: 3rem;
   padding-right: 3rem;
   padding-left: 3rem;
@@ -78,7 +85,7 @@ header div h1 {
 
 header div div p {
   color: white;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 1.8rem;
   flex-direction: row;
 }
@@ -96,5 +103,22 @@ header div div div button {
 
 header div div div button a {
   text-decoration: none;
+}
+
+/* TITULO CARRITO */
+#carrito {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+/* PRODUCTOS */
+.product div img {
+  width: 12rem;
+  height: 11rem;
+}
+
+.product div div button {
+  margin-bottom: 1.5rem;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=style.min.css.map */
