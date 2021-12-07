@@ -103,6 +103,13 @@ header {
 		}
 	}
 }
+.header__img{
+	margin:.2rem;
+	margin-right: 2rem;
+	width: 3rem;
+	height: 2.5rem;
+	
+}
 
 /* TITULO CARRITO */
 
@@ -112,21 +119,34 @@ header {
 }
 /* PRODUCTOS */
 
-.product {
-	div {
-		img {
-			width: 12rem;
-			height: 11rem;
-		}
-		div {
-			button {
-				margin-bottom: 1.5rem;
-				margin-top: 1rem;
-			}
-		}
+
+.main__card{
+	h1{
+		font-size: 5rem;
+
 	}
 }
-.shopping-cart-image {
-	width: 7rem;
-	height: 6rem;
+
+
+.container_product{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+		h3{
+			padding: 1rem;
+			font-weight: 700;
+		}
+		button{
+			padding: 1rem;
+		}
+		p{
+			padding: 1.5rem;
+		}
+
+}
+
+.main__card--img{
+	width: 22rem;
+	height: 19rem;
 }

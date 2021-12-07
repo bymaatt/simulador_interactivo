@@ -105,6 +105,13 @@ header div div div button a {
   text-decoration: none;
 }
 
+.header__img {
+  margin: .2rem;
+  margin-right: 2rem;
+  width: 3rem;
+  height: 2.5rem;
+}
+
 /* TITULO CARRITO */
 #carrito {
   margin-top: 3rem;
@@ -112,18 +119,32 @@ header div div div button a {
 }
 
 /* PRODUCTOS */
-.product div img {
-  width: 12rem;
-  height: 11rem;
+.main__card h1 {
+  font-size: 5rem;
 }
 
-.product div div button {
-  margin-bottom: 1.5rem;
-  margin-top: 1rem;
+.container_product {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.shopping-cart-image {
-  width: 7rem;
-  height: 6rem;
+.container_product h3 {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+.container_product button {
+  padding: 1rem;
+}
+
+.container_product p {
+  padding: 1.5rem;
+}
+
+.main__card--img {
+  width: 22rem;
+  height: 19rem;
 }
 /*# sourceMappingURL=style.min.css.map */

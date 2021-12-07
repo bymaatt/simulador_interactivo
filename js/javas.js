@@ -1,4 +1,4 @@
-function validar() {
+/* function validar() {
 	let usuario = document.getElementById("usuario").value;
 	let pass = document.getElementById("pass").value;
 
@@ -7,8 +7,7 @@ function validar() {
 	} else {
 		alert("verifique sus datos");
 	}
-}
-
+} */
 function agregar() {
 	function Producto(nombre, categoria, origen) {
 		this.nombre = nombre;
@@ -41,42 +40,5 @@ function imprimirLista() {
 		"</td></tbody>";
 }
 
-/* INFO */
 
-function ajax() {
-	const http = new XMLHttpRequest();
-	const url = "/info/iron_man.txt";
 
-	http.onreadystatechange = function () {
-		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.responseText);
-			document.getElementById("infor").innerHTML = this.responseText;
-		}
-	};
-
-	http.open("GET", url);
-	http.send();
-}
-
-document.getElementById("info1").addEventListener("click", function () {
-	ajax();
-});
-
-function ajax() {
-	const http = new XMLHttpRequest();
-	const url = "/info/spiderman.txt";
-
-	http.onreadystatechange = function () {
-		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.responseText);
-			document.getElementById("infor1").innerHTML = this.responseText;
-		}
-	};
-
-	http.open("GET", url);
-	http.send();
-}
-
-document.getElementById("info2").addEventListener("click", function () {
-	ajax();
-});
