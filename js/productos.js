@@ -1,7 +1,7 @@
-$.get( "js/productos.json", data => {
+$.get( "/js/productos.json", data => {
     
     const guardarProductosEnCarrito =  i => {
-        $(`.button${i}`).click( () => {
+        $(`#button${i}`).click( () => {
 
             const productoNombre = data.productos[i].nombre;
             const productoPrecio = data.productos[i].precio;
@@ -31,7 +31,7 @@ $.get( "js/productos.json", data => {
                     <img src = ${data.productos[i].imagen} class = "main__card--img main__card--element m-0 p-0">
                     <p class = "">${data.productos[i].descripcion}</p>
                     <h3 class = "main__card--h3 main__card--element">$${data.productos[i].precio}</h3>
-                    <button class = "main__card--button main__card--element btn-primary button${i}">AGREGAR AL CARRITO</button>
+                    <button class = "main__card--button main__card--element btn-primary" id= "button${i}">AGREGAR AL CARRITO</button>
                 </div>
             </div>`
             )
