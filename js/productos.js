@@ -1,8 +1,8 @@
-$.get( "/js/productos.json", data => {
+$.get( "./js/productos.json", data => {
     
     const guardarProductosEnCarrito =  i => {
         $(`#button${i}`).click( () => {
-
+            /* console.log(data.productos) */
             const productoNombre = data.productos[i].nombre;
             const productoPrecio = data.productos[i].precio;
 
