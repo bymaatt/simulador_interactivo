@@ -24,7 +24,7 @@ function agregar() {
 }
 
 const btn = document.getElementById("boton");
-btn.addEventListener("click", agregar);
+	btn.addEventListener("click", agregar);
 
 let array = [];
 function imprimirLista() {

@@ -105,9 +105,13 @@ header div div div button a {
   text-decoration: none;
 }
 
-.header__img {
+.carrito_compras {
+  margin-right: 1.5rem;
+  margin-top: 0.3rem;
+}
+
+.carrito_compras .header__img {
   margin: .2rem;
-  margin-right: 2rem;
   width: 3rem;
   height: 2.5rem;
 }
@@ -143,8 +147,7 @@ header div div div button a {
   padding: 1.5rem;
 }
 
-.main__card--img {
-  width: 22rem;
-  height: 19rem;
+#productos.card {
+  margin: 0% !important;
 }
 /*# sourceMappingURL=style.css.map */

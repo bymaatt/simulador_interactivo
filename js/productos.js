@@ -25,15 +25,15 @@ $.get( "./js/productos.json", data => {
 
         for (let i = 0; i < data.productos.length; i++) {
             $(".main__container").append(
-                `<div class ="main__card m-5 p-3">
-                <h1 class = "main__card--title main__card--element">${data.productos[i].nombre}</h1>
-                <div class="container_product">
-                    <img src = ${data.productos[i].imagen} class = "main__card--img main__card--element m-0 p-0">
-                    <p class = "">${data.productos[i].descripcion}</p>
-                    <h3 class = "main__card--h3 main__card--element">$${data.productos[i].precio}</h3>
-                    <button class = "main__card--button main__card--element btn-primary" id= "button${i}">AGREGAR AL CARRITO</button>
+                `<div id="productos" class="card" style="width: 18rem;">
+                <img src= "${data.productos[i].imagen}" class="card-img-top">
+                <div class="card-body">
+                  <h2 class="card-title">${data.productos[i].nombre}</h2>
+                  <p class="card-text">${data.productos[i].descripcion}</p>
+                  <h3 class="card-text">$${data.productos[i].precio}</h3>
+                  <button id= "button${i}" class="btn btn-primary" onclick=obtenerCant()>AGREGAR AL CARRITO</button>
                 </div>
-            </div>`
+              </div>`
             )
             guardarProductosEnCarrito(i)
     }
@@ -43,3 +43,10 @@ $.get( "./js/productos.json", data => {
     swal("ERROR 404", "Error en la base de datos, por favor contacte a soporte tecnico", "error");
 
 });
+
+const obtenerCant = () => {
+    var numerito = document.getElementsByTagName('span')[0];
+    var cartEvent= parseFloat(numerito.innerHTML) + 1;
+    numerito.innerHTML= cartEvent;
+}
+

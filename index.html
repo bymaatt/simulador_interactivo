@@ -23,7 +23,7 @@
 			<div class="container-fluid">
 				<a class="navbar-brand logo" href="#">Impo Coleccionables</a>
 				<button	class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+					<!-- <span class="navbar-toggler-icon"></span> -->
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
@@ -44,12 +44,7 @@
 			</div>
 			<div class="container-fluid">
 				<form class="d-flex">
-					<input
-						class="form-control me-2"
-						type="search"
-						placeholder="Search"
-						aria-label="Search"
-					/>
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
 					<button class="btn btn-outline-light" type="submit">Search</button>
 				</form>
 			</div>
@@ -68,9 +63,12 @@
 					/>
 				</div>
 			</div> -->
-			<a href = "../pag/carrito.html" class = "header__carrito">
-                <img class = "header__img" src="img/carrito_compra.png"/>
-            </a>
+			<div class="carrito_compras">
+				<a href = "../pag/carrito.html" class = "header__carrito">
+					<img class = "header__img" src="img/carrito_compra.png"/>
+					<span id="evento" class="position-absolute top-20 start-55 translate-middle badge rounded-pill bg-danger">0</span>
+				</a>
+			</div>
 		</nav>
 		<header>
 			<div>
